@@ -9,7 +9,7 @@ module.exports = {
   messages: {
     get: function (params) {
       var query = new db.Select('chatConnection',
-        ['Users.username', 'Messages.message', 'Rooms.name', 'Messages.createdAt'],
+        ['Users.username', 'Messages.message as text', 'Rooms.name as roomname', 'Messages.createdAt'],
         ['Messages', 'Users', 'Rooms']);
 
       query.constraints['Messages.Room_ID'] = 'Rooms.ID';

@@ -1,18 +1,20 @@
 body {
-    background: #eee;
+    background: #fafafa;
     text-align: center;
     padding: 0 25px;
-    font-family: arial, sans-serif;
+    font-family: Verdana, arial, sans-serif;
 }
 
 #main {
-    width: 500px;
+    width: 1000px;
     margin: auto;
     text-align: left;
     background: white;
     padding: 50px 60px;
     border: solid #ddd;
     border-width: 0 1px 1px 1px;
+    height: 200px;
+    overflow: auto;
 }
 
 #main h1 {
@@ -83,24 +85,16 @@ form input[type=text] {
     padding: 10px;
 }
 
-.message {
-    border: 1px solid red;
+#scrollboxCover {
+    position: absolute;
+    top: 342px;
+    width: 1000px;
+    height: 40px;
+    background-color: white;
+    margin-left: -2px;
 }
 
-.text {
-    text-align:right;
-}
-
-.user {
-    text-align:center;
-}
-
-.roomname {
-    text-align:left;
-}
-
-#friends {
-    height: 300px;
-    width: 100px;
-    float: left;
+#chatText {
+  width: 1067px;
+  margin-top: 20px;
 }

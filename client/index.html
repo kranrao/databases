@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>chatterbox</title>
+    <title>The Most Incredible Chatterbox</title>
     <link rel="stylesheet" href="styles/styles.css">
 
     <!-- dependencies -->
@@ -13,21 +13,20 @@
     <script src="scripts/app.js"></script>
   </head>
   <body>
-    <div id="friends">friends!</div>
+    <h1>The Most Incredible Chatterbox</h1>
     <div id="main">
-      <h1>chatterbox</h1>
       <!-- Your HTML goes here! -->
-      <form action="">
-        <textarea class='messageInput' rows='5' cols='40'></textarea>
-        <span>
-        new room here:
-          <input class="newRoom"type="text">
-        </span>
-
-      </form>
-      <button class='submit'>Submit Message</button>
-      <div id='roomSelect'></div>
-      <div id='chats'></div>
+      <!-- <div id="scrollboxCover"></div> -->
     </div>
+    <!-- <form id="chatBox"> -->
+      <input type="text" id="chatText">
+      <input type="button" id="chatButton" value="Send">
+    <!-- </form> -->
+    <script>
+      // initialize app after page loads
+      $(function(){
+        app.init();
+      });
+    </script>
   </body>
 </html>
